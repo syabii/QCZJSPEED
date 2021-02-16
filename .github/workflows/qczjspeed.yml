@@ -21,9 +21,6 @@ jobs:
         QCZJ_addCoin2BODY: ${{ secrets.QCZJ_addCoin2BODY }}
         QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
     steps:
-      - name: Checkout
-        run: |
-          git clone https://github.com/ziye12/QCZJSPEED.git ~/QCZJSPEED
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
